@@ -20,7 +20,6 @@ docker create \
   -e STAGING=true `#optional` \
   -p 443:443 \
   -p 80:80 `#optional` \
-  -v /nfs/nas/docker-vols/letsencrypt:/config \
+  -v /mnt/hd2/docker-vols/letsencrypt:/config \
   --restart unless-stopped \
   linuxserver/letsencrypt
-  
