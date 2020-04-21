@@ -9,7 +9,7 @@ docker create \
   -e PUID=1000 \
   -e PGID=1000 \
   -e TZ=America/Los_Angeles \
-  -e URL=finchtech.com \
+  -e URL=home.finchtech.com \
   -e SUBDOMAINS=wildcard, \
   -e VALIDATION=http \
   -e DNSPLUGIN=cloudflare `#optional` \
@@ -17,8 +17,8 @@ docker create \
   -e EMAIL=alfinternet@gmail.com `#optional` \
   -e DHLEVEL=2048 `#optional` \
   -e ONLY_SUBDOMAINS=false `#optional` \
-  -e EXTRA_DOMAINS=proxy `#optional` \
-  -e STAGING=false `#optional` \
+  -e EXTRA_DOMAINS=proxy.finchtech.com `#optional` \
+  -e STAGING=true `#optional` \
   -p 443:443 \
   -p 80:80 `#optional` \
   -v /nfs/nas/docker-vols/letsencrypt:/config \
