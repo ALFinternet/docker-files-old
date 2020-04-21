@@ -1,5 +1,4 @@
 #!/bin/bash
-mkdir /nfs/nas/docker-vols/heimdall
 
 docker create \
   --name=heimdall \
@@ -8,6 +7,6 @@ docker create \
   -e TZ=America/Los_Angeles \
   -p 8080:80 \
   -p 8081:443 \
-  -v /nfs/nas/docker-vols/heimdall:/config \
+  -v /mnt/hd2/docker-vols/heimdall:/config \
   --restart unless-stopped \
   linuxserver/heimdall
