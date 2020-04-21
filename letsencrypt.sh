@@ -10,7 +10,7 @@ docker create \
   -e PGID=1000 \
   -e TZ=America/Los_Angeles \
   -e URL=finchtech.com \
-  -e SUBDOMAINS=home, \
+  -e SUBDOMAINS=wildcard, \
   -e VALIDATION=http \
   -e DNSPLUGIN=cloudflare `#optional` \
   -e DUCKDNSTOKEN=<token> `#optional` \
