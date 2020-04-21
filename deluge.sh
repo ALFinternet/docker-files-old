@@ -1,4 +1,6 @@
 #!/bin/bash
+mkdir /nfs/nas/docker-voles/deluge_config
+mkdir /nfs/nas/docker-voles/deluge_downloads
 
 docker create \
   --name=deluge \
