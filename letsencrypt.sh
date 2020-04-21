@@ -12,7 +12,7 @@ docker create \
   -e SUBDOMAINS=wildcard \
   -e VALIDATION=http \
   -e DNSPLUGIN=cloudflare `#optional` \
-  -e DUCKDNSTOKEN=<token> `#optional` \
+  -e DUCKDNSTOKEN=token `#optional` \
   -e EMAIL=alfinternet@gmail.com `#optional` \
   -e DHLEVEL=2048 `#optional` \
   -e ONLY_SUBDOMAINS=false `#optional` \
@@ -23,3 +23,4 @@ docker create \
   -v /nfs/nas/docker-vols/letsencrypt:/config \
   --restart unless-stopped \
   linuxserver/letsencrypt
+  
