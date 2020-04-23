@@ -8,6 +8,6 @@ docker create \
   -e PUID=1000 \
   -e PGID=1000 \
   -e TZ=America/Los_Angeles \
-  -v /nfs/nas/docker-vols/ddclient_config:/config \
+  -v /mnt/hd2/docker-vols/ddclient_config:/config \
   --restart unless-stopped \
   linuxserver/ddclient
