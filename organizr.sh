@@ -7,7 +7,6 @@ docker create \
   -e PGID=1000 \
   -e TZ=America/Los_Angeles \
   -p 9983:80 \
-  -v path to data:/config \
   -v /mnt/hd2/docker-vols/organizr_config:/config \
   --restart unless-stopped \
   linuxserver/organizr
