@@ -2,6 +2,7 @@
 
 docker create \
   --name=heimdall \
+  --net=docker_bridge \
   -e PUID=1000 \
   -e PGID=1000 \
   -e TZ=America/Los_Angeles \
