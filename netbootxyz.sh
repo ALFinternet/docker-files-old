@@ -8,8 +8,8 @@ docker create \
   -e PGID=1000 \
   -p 3000:3000 \
   -p 69:69/udp \
-  -v /nfs/nas/docker-vols/netbootxyz_config:/config \
-  -v /nfs/nas/docker-vols/netbootxyz_assets:/assets \
+  -v /mnt/hd2/docker-vols/netbootxyz_config:/config \
+  -v /mnt/hd2/docker-vols/netbootxyz_assets:/assets \
   --restart unless-stopped \
   linuxserver/netbootxyz
 
